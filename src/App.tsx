@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
 import Dashboard from './components/dashboard/Dashboard';
 import EventList from './components/events/EventList';
 import Calendar from './components/calendar/Calendar';
@@ -40,10 +41,10 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header currentView={currentView} onViewChange={handleViewChange} />
       
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
         {renderCurrentView()}
       </main>
 
@@ -59,21 +60,7 @@ function App() {
         />
       </Modal>
 
-      <footer className="bg-white border-t border-gray-200 mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between">
-            <div className="flex items-center space-x-2 mb-4 sm:mb-0">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary-800 to-emerald-600 rounded-lg flex items-center justify-center">
-                <i className="bi bi-lightning-charge text-white text-sm"></i>
-              </div>
-              <span className="text-sm text-gray-600">SparkEvents - Professional Event Management</span>
-            </div>
-            <div className="text-sm text-gray-500">
-              Powered by <span className="font-medium text-primary-800">Websparks AI</span>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
