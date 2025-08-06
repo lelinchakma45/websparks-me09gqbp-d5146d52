@@ -23,9 +23,9 @@ const Header: React.FC<HeaderProps> = ({ currentView, onViewChange }) => {
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-br from-primary-800 to-emerald-600 rounded-xl flex items-center justify-center">
-                <i className="bi bi-calendar-check text-white text-lg"></i>
+                <i className="bi bi-lightning-charge text-white text-lg"></i>
               </div>
-              <h1 className="text-xl font-bold text-primary-800">EventPro</h1>
+              <h1 className="text-xl font-bold text-primary-800">SparkEvents</h1>
             </div>
             
             <nav className="hidden md:flex space-x-1">

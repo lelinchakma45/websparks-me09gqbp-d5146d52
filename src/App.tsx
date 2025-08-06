@@ -64,9 +64,9 @@ function App() {
           <div className="flex flex-col sm:flex-row items-center justify-between">
             <div className="flex items-center space-x-2 mb-4 sm:mb-0">
               <div className="w-8 h-8 bg-gradient-to-br from-primary-800 to-emerald-600 rounded-lg flex items-center justify-center">
-                <i className="bi bi-calendar-check text-white text-sm"></i>
+                <i className="bi bi-lightning-charge text-white text-sm"></i>
               </div>
-              <span className="text-sm text-gray-600">EventPro - Professional Event Management</span>
+              <span className="text-sm text-gray-600">SparkEvents - Professional Event Management</span>
             </div>
             <div className="text-sm text-gray-500">
               Powered by <span className="font-medium text-primary-800">Websparks AI</span>
